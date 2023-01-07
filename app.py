@@ -6,7 +6,10 @@ app = Flask(__name__)
 def msm():
     request_data = request.get_json()
     msm = request_data['msm']
-    print(msm);
+    number = request_data['number']
+    print(number)
+    print("-" * 100)
+    print(msm)
     print("#" * 100)
     return "Correct";
 
