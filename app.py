@@ -7,7 +7,7 @@ def msm():
     request_data = request.get_json()
     msm = request_data['msm']
     number_origin = request_data['number-origin']
-    number_destination = request_data['number-destination']
+    number_destination = request_data.get('number-destination', None)
     print(number_origin, "=>", number_destination)
     print("-" * 100)
     print(msm)
